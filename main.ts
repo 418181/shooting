@@ -14,6 +14,7 @@ input.onButtonPressed(Button.B, function () {
 })
 let 子彈: game.LedSprite = null
 let 主角: game.LedSprite = null
+game.setScore(0)
 主角 = game.createSprite(2, 4)
 let 飛機 = game.createSprite(0, 0)
 basic.forever(function () {
