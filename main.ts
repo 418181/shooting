@@ -17,7 +17,7 @@ let 主角: game.LedSprite = null
 主角 = game.createSprite(2, 4)
 let 飛機 = game.createSprite(0, 0)
 basic.forever(function () {
-    basic.pause(500)
+    basic.pause(randint(200, 400))
     飛機.change(LedSpriteProperty.X, 1)
     if (飛機.get(LedSpriteProperty.X) == 4) {
         basic.pause(500)
